@@ -1,0 +1,42 @@
+{
+  "name": "custom-beam-border",
+  "version": "0.1.0",
+  "description": "Animated single-color beam border effect for React — sharp rectangles, SVG-based, with glow and bloom.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.es.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs.js"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.tsx --format cjs,esm --dts --external react --external react-dom",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@types/react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["react", "beam", "border", "animation", "glow", "svg"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harooniftikhar/custom-beam-border"
+  }
+}
