@@ -17,7 +17,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.tsx --format cjs,esm --dts --external react --external react-dom",
     "prepublishOnly": "npm run build"
@@ -27,16 +29,28 @@
     "react-dom": ">=18"
   },
   "devDependencies": {
+    "@types/react": "^19.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@types/react": "^19.0.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "keywords": ["react", "beam", "border", "animation", "glow", "svg"],
+  "keywords": [
+    "react",
+    "beam",
+    "border",
+    "animation",
+    "glow",
+    "svg"
+  ],
   "license": "MIT",
+  "author": "Haroon Iftikhar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harooniftikhar/custom-beam-border"
+    "url": "https://github.com/hiftikha/custom-beam-border"
+  },
+  "homepage": "https://github.com/hiftikha/custom-beam-border#readme",
+  "bugs": {
+    "url": "https://github.com/hiftikha/custom-beam-border/issues"
   }
 }
