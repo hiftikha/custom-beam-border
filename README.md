@@ -4,6 +4,11 @@ Animated beam border effect for React. A spinning conic gradient masked to a thi
 
 Built for [roon.photography](https://roon.photography) where clicking any photo triggers a beam animation as voting feedback.
 
+## Example
+
+https://github.com/user-attachments/assets/369edc14-11b0-4518-bb49-b4d7c36e7905
+
+
 ## Install
 
 ```bash
